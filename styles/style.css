@@ -1,0 +1,88 @@
+/* font style */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+/* share style */
+
+* {
+      font-family: "Work Sans", sans-serif;
+}
+
+.btn-primary{
+    border-radius: 8px;
+    background-color: #FF900E;
+    color: #FFF;
+    font-size: 1.25rem;
+    padding: 20px 25px;
+    cursor: pointer;
+    border: 0;
+}
+
+/* header style */
+header{
+    background-color: papayawhip;
+    padding: 50px 230px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #131313;
+}
+
+nav > ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+nav li a{
+    text-decoration: none;
+    color: black;
+}
+/* Benner style */
+.benner-content{
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+.benner-title{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #131313;
+}
+.benner-dis{
+    color: #727272;
+}
+
+.benner img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* RESPOCESIVE SECSSION */
+/* Benner style responsive */
+/* For mobile */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
+/* for medium device or tablet */
+@media screen and (min-width:576px) and (max-width: 960px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+}
