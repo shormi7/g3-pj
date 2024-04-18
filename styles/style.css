@@ -5,6 +5,10 @@
 * {
       font-family: "Work Sans", sans-serif;
 }
+.text-gray{
+        color: #727272;
+    }
+    
 
 .btn-primary{
     border-radius: 8px;
@@ -57,14 +61,46 @@ nav li a{
     font-weight: 700;
     color: #131313;
 }
-.benner-dis{
-    color: #727272;
-}
 
 .benner img{
     margin-top: 20px;
     width: 100%;
 }
+/* style MAIN */
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
+
+/* teams style */
+.team-content{
+    display: flex;
+    align-items: center;
+}
+.team-pic{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1.5rem;
+}
+
+.team-dis{
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+.team-title{
+    font-size: 2.8rem;
+}
+.team-title .quick{
+    color: #727272;
+    font-weight: 500;
+}
+.team-title .text-fea{
+    color: #FF900E;
+    font-weight: 700;
+}
+
+
 
 /* RESPOCESIVE SECSSION */
 /* Benner style responsive */
@@ -73,16 +109,26 @@ nav li a{
     header{
         padding: 20px;
     }
-    nav{
+    nav,.team-content
+    {
         flex-direction: column;
     }
+    .team-pic{
+        grid-template-columns: 1fr;
+    }
+    .team-dis{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    
 }
 /* for medium device or tablet */
 @media screen and (min-width:576px) and (max-width: 960px) {
     header{
         padding: 50px;
     }
-    nav{
+    nav,.team-content{
         flex-direction: column;
     }
 }
+
